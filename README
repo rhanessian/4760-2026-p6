@@ -1,0 +1,33 @@
+4760-2026-P6 Memory Management
+Name: Rebecca Hanessian
+Date: 5/10/2026
+Environment: macOS (Unix style)
+How to compile the project:
+	Type 'make'
+How to run the project:
+	./oss [-h] [-n proc] [-s simul] [-t timelimitForChildren] 
+	[-i fractionOfSecondToLaunchChildren] [-f logfile]
+Example:
+	./oss -n 7 -s 3 -t 5 -i 0.3 -f log.txt
+Explanation: 
+	-proc is the number of user processes to launch
+	-simul is the number of processes that can run simultaneously
+	-timeLimitForChildren is the maximum simulated time that should pass before child 
+		process terminates (in seconds)
+	-fractionOdSecondToLaunchChildren is the minimum interval between launching child 
+		processes
+	-logfile is the filename to write OSS output
+	Default proc is 15, default simul is 7, default timeLimitForChildren is 5.7,
+		default fractionOfSecondToLaunchChildren is 0.2, default logfile is 'logfile.txt'.
+Generative AI:
+	Codex, openAI
+Prompts:
+	After creating a project skeleton and reusing functions/globals/structs from previous
+	projects, I used Codex to help edit any new functions. I had it check for logical
+	continuity and organizational consistency. Finally, I had it debug any remaining
+	errors and suggest any changes to follow best coding practices.
+Summary:
+	After using Codex for project 5, I figured out how I can best utilize it as a tool
+	to better my own coding skills. It worked well and can compile within the app which 
+	eliminated the need for external builds to locate errors.
+	
